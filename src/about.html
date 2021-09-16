@@ -8,16 +8,15 @@
     <title>IHS Comp Sci Club</title>
     <link href="style.css" rel="stylesheet" , type="text/css" />
 
+    <!-- This is the react stuff. It allows for the use of the React and ReactDOM objects-->
+    <!-- Required: the actual files (see chrehall68's fork)-->
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
 </head>
 
 <body style="background-color:lightblue;">
     <!-- Topnav bar -->
-    <div class="topnav">
-        <a id="static">Comp Sci Club!!</a>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="about.html">About Us</a>
-    </div>
+    <div class="topnav" id="TopNavDiv"></div>
 
     <!-- First item (always needs the first class since that offsets it)-->
     <h1 class="first" style="text-align: center;">It's all about learning how to program!</h1>
@@ -48,5 +47,8 @@
 </body>
 
 <script src="./index.js"></script>
+<script>
+    ReactDOM.render(React.createElement(TopNavBar), document.getElementById('TopNavDiv'))
+</script>
 
 </html>
