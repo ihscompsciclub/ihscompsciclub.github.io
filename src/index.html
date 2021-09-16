@@ -17,16 +17,16 @@
 
 <body>
     <!-- Topnav bar -->
-    <div class="topnav"></div>
+    <div class="topnav" id='TopNavDiv'></div>
 
     <!-- TODO - change this to something else besides just filler-->
-    <div class="fillerDiv"></div>
+    <div class="filler" id="fillerDiv"></div>
 </body>
 
 <script src="index.js"></script>
 <script>
-    ReactDOM.render(TopNavBar, document.getElementById('topnav'))
-    ReactDOM.render(Fill, { fillText: "filler - eventually replace this with real content", times: 300 }, document.getElementById('fillerDiv'))
+    ReactDOM.render(React.createElement(TopNavBar), document.getElementById('TopNavDiv'))
+    ReactDOM.render(React.createElement(Fill, { fillText: "filler - eventually replace this with real content", times: 300 }), document.getElementById('fillerDiv'))
 </script>
 
 </html>
