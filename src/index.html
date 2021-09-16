@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="English-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>IHS Comp Sci Club</title>
+    <link href="style.css" rel="stylesheet" , type="text/css" />
+
+
+    <!-- This is the react stuff. It allows for the use of the React and ReactDOM objects-->
+    <!-- Required: the actual files (see chrehall68's fork)-->
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <!-- Topnav bar -->
+    <div class="topnav"></div>
+
+    <!-- TODO - change this to something else besides just filler-->
+    <div class="fillerDiv"></div>
+</body>
+
+<script src="index.js"></script>
+<script>
+    ReactDOM.render(TopNavBar, document.getElementById('topnav'))
+    ReactDOM.render(Fill, { fillText: "filler - eventually replace this with real content", times: 300 }, document.getElementById('fillerDiv'))
+</script>
+
+</html>
