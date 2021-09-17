@@ -55,10 +55,15 @@ class TopNavBar extends React.Component {
         return (
             React.createElement('div', { className: "topnav" },
                 React.createElement(TopNavElement, { id: "static", title: "Comp Sci!" }),
-                React.createElement(TopNavElement, { title: "home", href: "index.html" }),
-                React.createElement(TopNavElement, { title: "about", href: "about.html" }),
-                React.createElement(TopNavElement, { title: "contact", href: "contact.html" })
+                React.createElement(TopNavElement, { title: "Home", href: "index.html" }),
+                React.createElement(TopNavElement, { title: "About Us", href: "about.html" }),
+                React.createElement(TopNavElement, { title: "Activities", href: "activities.html" }),
+                React.createElement(TopNavElement, { title: "Contact Us", href: "contact.html" })
             )
         )
     }
 }
+
+
+// TODO
+// see https://docs.google.com/document/d/16BLn7T7ivYym9qI5dMtzOyyryrHUE_G6EjpGhztxA3Y/edit
