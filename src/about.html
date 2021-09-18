@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="English-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>IHS Comp Sci Club</title>
+    <link href="style.css" rel="stylesheet" , type="text/css" />
+
+    <!-- This is the react stuff. It allows for the use of the React and ReactDOM objects-->
+    <!-- Required: the actual files (see chrehall68's fork)-->
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+</head>
+
+<body style="background-color:lightblue;">
+    <!-- Topnav bar -->
+    <div class="topnav" id="TopNavDiv"></div>
+
+    <!-- First item (always needs the first class since that offsets it)-->
+    <h1 class="first" style="text-align: center;">It's all about learning how to program!</h1>
+
+    <!-- body -->
+    <h2>JavaScript!</h2>
+    <p>
+        From website functionality to discord bots, there's many things you can do with JavaScript.<br>This year,
+        JavaScript is our club's language of choice! So, we'll start teaching JavaScript and its many
+        applications.
+    </p>
+    <h2>Python</h2>
+    <p>Python - a fast-growing, high-level language popular with both data scientists and beginners alike. It's an
+        interpreted language with its own garbage collector and more.
+        Its syntax is easy to learn and great for beginners. It supports object-oriented programming as well as
+        functional programming, providing lots of flexibility. We might teach Python this year.</p>
+    <h2>Java</h2>
+    <p>Java is a classic object-oriented programming language. Used to build applications like Minecraft,
+        it's clear that Java is amazingly useful. It's a compiled language and great.
+    </p>
+    <h2>C/C++</h2>
+    <p>C might be old, but C and C++ are still widely used. In fact, linux systems come with a c compiler.
+        While C isn't an object-oriented language, C++.
+    </p>
+    <div id="root"></div>
+
+    <h1 id="filler"></h1>
+</body>
+
+<script src="./index.js"></script>
+<script>
+    ReactDOM.render(React.createElement(TopNavBar), document.getElementById('TopNavDiv'))
+</script>
+
+</html>
