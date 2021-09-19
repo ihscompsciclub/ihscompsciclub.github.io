@@ -15,7 +15,7 @@
 
 .App-header {
     background-color: #282c34;
-    min-height: 100vh;
+    min-height: 92vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +37,7 @@
     }
 }
 
+/* Styles used for TopNavBar*/
 .topnav {
     background-color:black;
     overflow: hidden;
@@ -75,4 +76,20 @@
     width: 32px;
     height: auto;
     max-width: 100%;
+}
+#firstItem{
+    padding-top:2%;
+}
+
+/*Style used for centeredContent*/
+.centeredContent {
+    padding-left: 15%;
+    padding-right:15%;
+}
+
+
+/* Style used for all content (to set background)*/
+.Content{
+    background-color: #282c34;
+    min-height: 98vh;  /* accounts for topNav taking up 2% (2vh) of screen*/
 }
