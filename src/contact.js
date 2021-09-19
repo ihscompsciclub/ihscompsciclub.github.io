@@ -1,5 +1,5 @@
 import React from "react";
-import { TopNavBar } from './util'
+import { TopNavBar, PersonCard } from './util'
 
 export class Contact extends React.Component {
     render() {
@@ -8,6 +8,7 @@ export class Contact extends React.Component {
                 <TopNavBar />
                 <div className="centeredContent">
                     <h1>TODO</h1>
+                    <PersonCard imgSrc="./memberImgs/headshot02 (1).jpg" name="Guy" shortDesc="A regular person just like you who likes to code" />
                 </div>
             </div>
         )

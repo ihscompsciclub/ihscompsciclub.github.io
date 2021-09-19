@@ -93,3 +93,16 @@
     background-color: #282c34;
     min-height: 98vh;  /* accounts for topNav taking up 2% (2vh) of screen*/
 }
+
+/* style used for (member) cards */
+.card{
+    background-color: white;
+    min-height:25vh;    
+    text-align: center;
+    min-width:15vh;
+    width:15vh;
+}
+.card img{
+    width:15vh;
+    height:auto;
+}

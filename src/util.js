@@ -19,3 +19,20 @@ export class TopNavBar extends React.Component {
     }
 }
 
+export class PersonCard extends React.Component {
+    // props needed:
+    // imgSrc
+    // name
+    // shortDesc
+
+    render() {
+        return (
+            //assumes white background is wanted for cards
+            <div className="card">
+                <img src={this.props.imgSrc} alt={this.props.name}></img>
+                <h3>{this.props.name}</h3>
+                <p>{this.props.shortDesc}</p>
+            </div>
+        )
+    }
+}
