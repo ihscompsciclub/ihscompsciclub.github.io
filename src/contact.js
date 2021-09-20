@@ -2,15 +2,40 @@ import React from "react";
 import { TopNavBar, PersonCard } from './util'
 
 export class Contact extends React.Component {
-    render() {
-        return (
-            <div className="Content">
-                <TopNavBar />
-                <div className="centeredContent">
-                    <h1>Our Members</h1>
-                    <PersonCard imgSrc="./memberImgs/headshot02 (1).jpg" name="Guy" shortDesc="A regular person just like you who likes to code" />
-                </div>
-            </div>
-        )
-    }
+  render() {
+    document.getElementsByTagName('html')[0].style = "background:#282c34"
+    return (
+      <div className="Content">
+        <TopNavBar />
+        <div className="centeredContent">
+          <h1>Our Officers</h1>
+          <div className="personBlock">
+            {/*Put real PersonCard's here instead of just using my picture*/}
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+          </div>
+          <h1>Our Members</h1>
+          <div className="personBlock">
+            {/* Put real PersonCard's here insteaed of just using a bunch of fillers */}
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code" />
+          </div>
+        </div>
+      </div >
+    )
+  }
 }

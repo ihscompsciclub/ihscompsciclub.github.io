@@ -9,6 +9,7 @@ export class Home extends React.Component {
             <div className="Home">
                 <TopNavBar />
                 <header className="App-header">
+                    <h1 id="welcome">Welcome to IHS Computer Science Club</h1>
                     <img src={logo} className="App-logo" alt="logo" />
                     <p>
                         Edit <code>src/App.js</code> and save to reload.
