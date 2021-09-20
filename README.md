@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# IMPORTANT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Run `npm create-react-app` in the folder before transfering github files to it.
+(alternatively, run `npm create-react-app` on a different folder and just copy the files into project directory)
 
 ## Available Scripts
 
