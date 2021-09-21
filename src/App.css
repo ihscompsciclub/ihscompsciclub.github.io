@@ -133,3 +133,22 @@
     background: rgb(132, 230, 187);
     margin-bottom: 20vh;
 }
+.personBlock::-webkit-scrollbar{
+    background-color:inherit;
+    display:block;
+    width:5px;
+}
+.personBlock::-webkit-scrollbar-thumb{
+    background:#000;
+}
+
+html::-webkit-scrollbar{
+    background-color: #282c34;
+    display:block;
+    width:10px;
+}
+html::-webkit-scrollbar-thumb{
+    background:#000;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+}
