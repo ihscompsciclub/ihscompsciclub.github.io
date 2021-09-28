@@ -8,11 +8,11 @@ export class TopNavBar extends React.Component {
                 <div className="topnav">
                     <img src="/transBGLogo.png" alt="logo" />
                     <p>IHS Comp Sci Club</p>
-                    <Link to="/">Home</Link>
-                    <Link to="/faqs">FAQs</Link>
-                    <Link to="/about">About Us</Link>
-                    <Link to="/activities">Activities</Link>
-                    <Link to="/contact">Contact Us</Link>
+                    <Link to="/" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Home</Link>
+                    <Link to="/faqs" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>FAQs</Link>
+                    <Link to="/about" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>About Us</Link>
+                    <Link to="/activities" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Activities</Link>
+                    <Link to="/contact" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Contact Us</Link>
                 </div>
                 <p id="firstItem"></p>
             </div>

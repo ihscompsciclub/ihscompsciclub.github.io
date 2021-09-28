@@ -3,6 +3,7 @@ import { TopNavBar, CoolScrollEffect, Filler } from './util'
 
 
 export class Home extends React.Component {
+
     render() {
         return (
             <div className="Home Content">
@@ -20,7 +21,6 @@ export class Home extends React.Component {
                     <table>
                         <tbody>
                             <tr>
-
                                 <th><img alt="club" className="centeredContent paddedContent" id="clubpic"></img></th>
                                 <th>
                                     <h1>Yeah, us</h1>
