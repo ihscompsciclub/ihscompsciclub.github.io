@@ -9,6 +9,7 @@ export class TopNavBar extends React.Component {
                     <img src="/transBGLogo.png" alt="logo" />
                     <p>IHS Comp Sci Club</p>
                     <Link to="/">Home</Link>
+                    <Link to="/faqs">FAQs</Link>
                     <Link to="/about">About Us</Link>
                     <Link to="/activities">Activities</Link>
                     <Link to="/contact">Contact Us</Link>

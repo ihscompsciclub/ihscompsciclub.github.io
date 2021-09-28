@@ -1,29 +1,17 @@
 import React from 'react'
-import logo from './logo.svg';
 import { TopNavBar } from './util'
 
 
 export class Home extends React.Component {
     render() {
         return (
-            <div className="Home">
+            <div className="Home Content">
                 <TopNavBar />
-                <header className="App-header">
-                    <h1 id="welcome">Welcome to IHS Computer Science Club</h1>
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <p>
-                        Edit <code>src/App.js</code> and save to reload.
-                    </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
-                </header>
-            </div>
+                <h1 id="hp_header" className="centeredContent">Welcome to IHS Computer Science Club</h1>
+                <video width="100%" autoPlay={true} loop={true}>
+                    <source src="Videos/A.mp4" type="video/mp4" />
+                </video>
+            </div >
         )
     }
 }

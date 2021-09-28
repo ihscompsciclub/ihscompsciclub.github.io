@@ -1,69 +1,28 @@
-.App {
-    text-align: center;
-}
-
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 92vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 /* Styles used for TopNavBar*/
 .topnav {
-    background-color:black;
+    background-color: #26428b;
     overflow: hidden;
     display:inline;
     position: fixed;
     width: 100%;
     top: 0px;
     left:0px;
+    font-weight: bold;
+    font-size: x-large;
 }
 .topnav p{
     margin:0%;
     padding:1%;
     float:left;
-    background-color: black;
     color:white;
-    display:inline;
-    font-size: x-large;
     text-align: center;
 }
 .topnav a{
     float:left;
     color:white;
     text-align: center;
+    text-decoration:none;
     padding:1%;
-    font-size: x-large;
-    display:inline;
 }
 .topnav a:hover{
     background-color: white;
@@ -81,33 +40,25 @@
     padding-top:2%;
 }
 
+
+
 /*Style used for home page */
-#welcome {
-    text-align: center;
-    font-size: xx-large;
-    color:white;
-    
-    background-image: url("./bgImgs/cpic.png");
-    background-size: cover;
-    background-position-y: center;
-    background-attachment:fixed;
-    
-    padding-top:20vh;
-    padding-bottom: 20vh;
-    width: 100%;
-    margin:0%;
+#hp_header{
+    padding-top:10vh;
 }
 
 /*Style used for centeredContent*/
 .centeredContent {
     padding-left: 15%;
     padding-right:15%;
+    text-align: center;
+    color:white;
 }
 
 
 /* Style used for all content (to set background)*/
 .Content{
-    background-color: #282c34;
+    background-color: #212121;
     min-height: 98vh;  /* accounts for topNav taking up 2% (2vh) of screen*/
 }
 

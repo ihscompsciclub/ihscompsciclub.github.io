@@ -5,6 +5,7 @@ import { Home } from './home'
 import { About } from './about'
 import { Activities } from './activities';
 import { Contact } from './contact';
+import { Faqs } from './faqs';
 
 export class App extends React.Component {
     render() {
@@ -12,6 +13,7 @@ export class App extends React.Component {
             <div className="App">
                 <Switch>
                     <Route path="/" component={Home} exact />
+                    <Route path="/faqs" component={Faqs} />
                     <Route path="/about" component={About} />
                     <Route path="/activities" component={Activities} />
                     <Route path="/contact" component={Contact} />
