@@ -24,6 +24,7 @@ html::-webkit-scrollbar-thumb{
     left:0px;
     font-weight: bold;
     font-size: x-large;
+    z-index: 100;
 }
 .topnav p{
     margin:0%;
@@ -60,6 +61,9 @@ html::-webkit-scrollbar-thumb{
 /*Style used for home page */
 #hp_header{
     padding-top:10vh;
+}
+#hp_vid{
+    z-index: -1;
 }
 .coolScrollEffect hr{
     background-color:white;
