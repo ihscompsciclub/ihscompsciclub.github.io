@@ -18,17 +18,22 @@ export class Home extends React.Component {
                 <CoolScrollEffect>
                     <h1 className="centeredContent">K-33 | 3:30 - 4:30 PM PST | Wednesdays</h1>
                     <table>
-                        <th><img alt="club" className="centeredContent" id="clubpic"></img></th>
-                        <th>
-                            <h1>Yeah, us</h1>
-                            <p>
-                                Club Description<br />
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </th>
+                        <tbody>
+                            <tr>
+
+                                <th><img alt="club" className="centeredContent" id="clubpic"></img></th>
+                                <th>
+                                    <h1>Yeah, us</h1>
+                                    <p>
+                                        Club Description<br />
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </th>
+                            </tr>
+                        </tbody>
                     </table>
                 </CoolScrollEffect>
 
