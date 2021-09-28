@@ -6,7 +6,7 @@ export class Activities extends React.Component {
         return (
             <div className="Content">
                 <TopNavBar />
-                <h1 className="centeredContent">TODO</h1>
+                <h1 className="centeredContent paddedContent">TODO</h1>
             </div>
         )
     }

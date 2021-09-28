@@ -9,19 +9,19 @@ export class Home extends React.Component {
                 <TopNavBar />
 
                 <CoolScrollEffect>
-                    <h1 id="hp_header" className="centeredContent">Welcome to IHS Computer Science Club</h1>
+                    <h1 id="hp_header" className="centeredContent paddedContent">Welcome to IHS Computer Science Club</h1>
                     <video playsInline={true} id="hp_vid" width="100%" autoPlay={true} loop={true} muted={true} >
                         <source src="Videos/A.mp4" type="video/mp4" />
                     </video>
                 </CoolScrollEffect>
 
                 <CoolScrollEffect>
-                    <h1 className="centeredContent">K-33 | 3:30 - 4:30 PM PST | Wednesdays</h1>
+                    <h1 className="centeredContent paddedContent">K-33 | 3:30 - 4:30 PM PST | Wednesdays</h1>
                     <table>
                         <tbody>
                             <tr>
 
-                                <th><img alt="club" className="centeredContent" id="clubpic"></img></th>
+                                <th><img alt="club" className="centeredContent paddedContent" id="clubpic"></img></th>
                                 <th>
                                     <h1>Yeah, us</h1>
                                     <p>

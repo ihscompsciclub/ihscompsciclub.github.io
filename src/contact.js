@@ -7,7 +7,7 @@ export class Contact extends React.Component {
     return (
       <div className="Content">
         <TopNavBar />
-        <div className="centeredContent">
+        <div className="centeredContent paddedContent">
           <h1>Our Officers</h1>
           <div className="personBlock">
             {/*Put real PersonCard's here instead of just using my picture*/}

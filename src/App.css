@@ -79,9 +79,12 @@ html::-webkit-scrollbar-thumb{
 
 /*Style used for centeredContent*/
 .centeredContent {
+    text-align: center;
+    color:white;
+}
+.paddedContent {
     padding-left: 15%;
     padding-right:15%;
-    text-align: center;
     color:white;
 }
 
@@ -122,4 +125,19 @@ html::-webkit-scrollbar-thumb{
 }
 .personBlock::-webkit-scrollbar-thumb{
     background:#000;
+}
+
+/* Styles used for About Us page */
+.letteredList{
+    list-style: lower-alpha;
+    text-indent: 0.5in;
+}
+.numberedList{
+    list-style:decimal;
+}
+.larger {
+    font-size: larger;
+}
+.xlarge {
+    font-size:x-large;
 }
