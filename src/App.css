@@ -71,6 +71,7 @@
     min-width:15vh;
     width:30vh;
     margin: 1vh;
+    color:black;
 }
 .card img{
     width:inherit;
