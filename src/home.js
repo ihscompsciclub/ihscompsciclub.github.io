@@ -1,5 +1,5 @@
 import React from 'react'
-import { TopNavBar } from './util'
+import { TopNavBar, CoolScrollEffect } from './util'
 
 
 export class Home extends React.Component {
@@ -7,10 +7,31 @@ export class Home extends React.Component {
         return (
             <div className="Home Content">
                 <TopNavBar />
-                <h1 id="hp_header" className="centeredContent">Welcome to IHS Computer Science Club</h1>
-                <video width="100%" autoPlay={true} loop={true}>
-                    <source src="Videos/A.mp4" type="video/mp4" />
-                </video>
+
+                <CoolScrollEffect>
+                    <h1 id="hp_header" className="centeredContent">Welcome to IHS Computer Science Club</h1>
+                    <video width="100%" autoPlay={true} loop={true} muted={true} >
+                        <source src="Videos/A.mp4" type="video/mp4" />
+                    </video>
+                </CoolScrollEffect>
+
+                <CoolScrollEffect>
+                    <h1 className="centeredContent">K-33 | 3:30 - 4:30 PM PST | Wednesdays</h1>
+                    <table>
+                        <th><img alt="club" className="centeredContent" id="clubpic"></img></th>
+                        <th>
+                            <h1>Yeah, us</h1>
+                            <p>
+                                Club Description<br />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </th>
+                    </table>
+                </CoolScrollEffect>
+
             </div >
         )
     }

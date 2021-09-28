@@ -37,3 +37,29 @@ export class PersonCard extends React.Component {
         )
     }
 }
+
+export class CoolScrollEffect extends React.Component {
+    render() {
+        return (
+            <div className="coolScrollEffect">
+                {this.props.children}
+                <hr />
+            </div>
+        )
+    }
+}
+
+export class Filler extends React.Component {
+    fill(times) {
+        var text = "Filler<br/>\n"
+        var retText = ""
+        for (var i = 0; i < times; i++) {
+            retText += text;
+        }
+        return retText;
+    }
+
+    render() {
+        return <h2>{this.fill(300)}</h2>
+    }
+}

@@ -1,3 +1,18 @@
+html{
+    background-color: #212121;
+    color:white;
+}
+html::-webkit-scrollbar{
+    background-color: #282c34;
+    display:block;
+    width:10px;
+}
+html::-webkit-scrollbar-thumb{
+    background:#000;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+}
+
 /* Styles used for TopNavBar*/
 .topnav {
     background-color: #26428b;
@@ -46,6 +61,17 @@
 #hp_header{
     padding-top:10vh;
 }
+.coolScrollEffect hr{
+    background-color:white;
+    height: 3px;
+    width:97.5%;
+    float:center;
+    border-radius: 3px;
+}
+#clubpic{
+    min-width: 120vh;
+    min-height:67.5vh;
+}
 
 /*Style used for centeredContent*/
 .centeredContent {
@@ -92,15 +118,4 @@
 }
 .personBlock::-webkit-scrollbar-thumb{
     background:#000;
-}
-
-html::-webkit-scrollbar{
-    background-color: #282c34;
-    display:block;
-    width:10px;
-}
-html::-webkit-scrollbar-thumb{
-    background:#000;
-    -webkit-border-radius: 15px;
-    border-radius:15px;
 }
