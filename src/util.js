@@ -47,7 +47,7 @@ class TopNavBarElement extends React.Component {
     render() {
         return (
             <Dropdown as="span" align="start" className="topnavdd"
-                onMouseEnter={() => { this.color = "black"; this.setState({ show_items: true }); console.log('entered'); }}
+                onMouseOver={() => { this.color = "black"; this.setState({ show_items: true }); console.log('entered'); }}
                 onMouseLeave={() => { this.color = "white"; this.setState({ show_items: false }); console.log('left'); }}>
 
                 <Link to={this.props.to} style={{ textAlign: "center", width: "max-content", float: "center", color: this.color }}>

@@ -71,14 +71,6 @@ html::-webkit-scrollbar-thumb{
     background-color: white;
     color:#000;
 }
-/*
-.topnavdd .dropdown-menu{
-    background-color: #26428b;
-    color:white;
-    width:unset;
-    transform: translateY(25%) translateX(-10%);
-}*/
-
 #firstItem{
     padding-top:4%;
 }
