@@ -11,7 +11,7 @@ export class TopNavBar extends React.Component {
                     <p>IHS Comp Sci Club</p>
                     <Link to="/" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Home</Link>
                     <Link to="/faqs" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>FAQs</Link>
-                    <TopNavBarElement items={[1, 2, 3, 4, 5]} title="About Us" to="/about" />
+                    <TopNavBarElement items={["officers", "members", "gallery"]} title="About Us" to="/about" />
                     <Link to="/activities" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Activities</Link>
                     <Link to="/contact" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Contact Us</Link>
                 </div>
@@ -30,7 +30,9 @@ class TopNavBarElement extends React.Component {
 
         this.renderItems = []
         for (var i = 0; i < this.props.items.length; i++) {
-            this.renderItems.push(<Dropdown.Item >{this.props.items[i]}</Dropdown.Item>)
+            this.renderItems.push(<Dropdown.Item href={this.props.to + "#" + this.props.items[i]}>
+                {this.props.items[i]}
+            </Dropdown.Item>)
         }
         this.title = this.props.title
 
