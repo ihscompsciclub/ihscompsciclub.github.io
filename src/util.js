@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import Dropdown from 'react-bootstrap/Dropdown'
 
 export class TopNavBar extends React.Component {
@@ -30,9 +31,9 @@ class TopNavBarElement extends React.Component {
 
         this.renderItems = []
         for (var i = 0; i < this.props.items.length; i++) {
-            this.renderItems.push(<Dropdown.Item href={this.props.to + "#" + this.props.items[i]}>
+            this.renderItems.push(<HashLink className="dropdown-item" to={this.props.to + "#" + this.props.items[i]}>
                 {this.props.items[i]}
-            </Dropdown.Item>)
+            </HashLink>)
         }
         this.title = this.props.title
 
