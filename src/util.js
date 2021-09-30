@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from 'react-router-dom'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 export class TopNavBar extends React.Component {
     render() {
@@ -10,12 +11,53 @@ export class TopNavBar extends React.Component {
                     <p>IHS Comp Sci Club</p>
                     <Link to="/" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Home</Link>
                     <Link to="/faqs" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>FAQs</Link>
-                    <Link to="/about" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>About Us</Link>
+                    <TopNavBarElement items={[1, 2, 3, 4, 5]} title="About Us" to="/about" />
                     <Link to="/activities" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Activities</Link>
                     <Link to="/contact" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Contact Us</Link>
                 </div>
                 <p id="firstItem"></p>
             </div>
+        )
+    }
+}
+
+class TopNavBarElement extends React.Component {
+    // props needed
+    // items: []
+
+    constructor(props) {
+        super(props)
+
+        this.renderItems = []
+        for (var i = 0; i < this.props.items.length; i++) {
+            this.renderItems.push(<Dropdown.Item >{this.props.items[i]}</Dropdown.Item>)
+        }
+        this.title = this.props.title
+
+        this.state = { show_items: false }
+
+        this.color = "white"
+    }
+
+
+
+    render() {
+        return (
+            <Dropdown as="span" align="start" className="topnavdd"
+                onMouseEnter={() => { this.color = "black"; this.setState({ show_items: true }); console.log('entered'); }}
+                onMouseLeave={() => { this.color = "white"; this.setState({ show_items: false }); console.log('left'); }}>
+
+                <Link to={this.props.to} style={{ textAlign: "center", width: "max-content", float: "center", color: this.color }}>
+                    {this.title}
+                </Link>
+                <Dropdown.Menu show={this.state.show_items} style={{
+                    backgroundColor: "#26428b", color: "white",
+                    width: "unset", transform: ("translateY(" + 1 / this.renderItems.length * 100 + "%) translateX(-10%)")
+                }}>
+                    {this.renderItems}
+                </Dropdown.Menu>
+
+            </Dropdown >
         )
     }
 }

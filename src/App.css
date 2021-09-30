@@ -1,5 +1,5 @@
 html{
-    background-color: #212121;
+    background-color:  #212121;
     color:white;
 }
 html::-webkit-scrollbar{
@@ -12,11 +12,13 @@ html::-webkit-scrollbar-thumb{
     -webkit-border-radius: 15px;
     border-radius:15px;
 }
+.App{
+    color:white;
+}
 
 /* Styles used for TopNavBar*/
 .topnav {
     background-color: #26428b;
-    overflow: hidden;
     display:inline;
     position: fixed;
     width: 100%;
@@ -32,8 +34,10 @@ html::-webkit-scrollbar-thumb{
     float:left;
     color:white;
     text-align: center;
+    vertical-align: middle;
 }
 .topnav a{
+    vertical-align: middle;
     float:left;
     color:white;
     text-align: center;
@@ -46,16 +50,37 @@ html::-webkit-scrollbar-thumb{
 }
 .topnav img{
     float:left;
-    vertical-align:middle;
     padding: 1%;
-    width: 32px;
+    display:block;
+    width: 64px;
     height: auto;
     max-width: 100%;
 }
+
+.topnavdd{
+    margin:0%;
+    position: relative;
+    display:block;
+    float:left;
+    text-align: center;
+    padding:1%;
+    height:min-content;
+}
+.topnavdd:hover{
+    background-color: white;
+    color:#000;
+}
+/*
+.topnavdd .dropdown-menu{
+    background-color: #26428b;
+    color:white;
+    width:unset;
+    transform: translateY(25%) translateX(-10%);
+}*/
+
 #firstItem{
     padding-top:2%;
 }
-
 
 
 /*Style used for home page */
