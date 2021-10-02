@@ -1,5 +1,5 @@
 import React from "react";
-import { TopNavBar, PersonCard } from './util'
+import { TopNavBar, Filler } from './util'
 
 export class Contact extends React.Component {
   render() {
@@ -8,32 +8,10 @@ export class Contact extends React.Component {
       <div className="Content">
         <TopNavBar />
         <div className="centeredContent paddedContent">
-          <h1>Our Officers</h1>
-          <div className="personBlock">
-            {/*Put real PersonCard's here instead of just using my picture*/}
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Girl" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Girl" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Girl" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Girl" shortDesc="A regular person who likes to code/design" />
-          </div>
-          <h1>Our Members</h1>
-          <div className="personBlock">
-            {/* Put real PersonCard's here insteaed of just using a bunch of fillers */}
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Girl" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Girl" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Girl" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Girl" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Guy" shortDesc="A regular person who likes to code/design" />
-            <PersonCard imgSrc="./memberImgs/cpic.png" name="Girl" shortDesc="A regular person who likes to code/design" />
-          </div>
+          <h1 id="airtableForm">AIRTABLE FORM TODO</h1>
+          <Filler />
+          <h1 id="socials">SOCIALS TODO</h1>
+          <Filler />
         </div>
       </div >
     )
