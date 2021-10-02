@@ -5,7 +5,8 @@ Run `npm create-react-app` in the folder before transfering github files to it.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run these important scripts:
+
 
 ### `npm start`
 
@@ -15,6 +16,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### `npm run deploy`
+
+This allows you to publish your local machine's code onto the repo website (ihscompsciclub.github.io). However, in order to be able to do it, please do the following steps:
+- run `npm install github-pages` in your project directory
+- That's it! (All the other stuff that you have to do has been done already, so all you have to do is `npm install github-pages` and then you can use `npm run deploy` to update ihscompsciclub.github.io)
+- (Please use this power responsibly; while this is a public repo, unless you're in IHS comp sci club, contact @andyphung before updating our page.)
+
+## Less important scripts
+
+The following are less important scripts that I doubt you will use.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -42,12 +53,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
+Still curious about react?
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-## `npm run deploy`
-This allows you to publish your local machine's code onto the repo website (ihscompsciclub.github.io). However, in order to be able to do it, please do the following steps:
-- run `npm install github-pages` in your project directory
-- That's it! (All the other stuff that you have to do has been done already, so all you have to do is `npm install github-pages` and then you can use `npm run deploy` to update ihscompsciclub.github.io)
-- (Please use this power responsibly; while this is a public repo, unless you're in IHS comp sci club, contact @andyphung before updating our page.)
