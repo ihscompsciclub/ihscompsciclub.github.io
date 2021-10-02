@@ -1,0 +1,1 @@
+- run: sh setEnvironment.sh ${{ secrets.airtable_key }}

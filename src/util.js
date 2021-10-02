@@ -12,11 +12,11 @@ export class TopNavBar extends React.Component {
                     <p>IHS Comp Sci Club</p>
                     <Link to="/" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Home</Link>
                     <Link to="/faqs" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>FAQs</Link>
-                    <TopNavBarElement items={["officers", "members", "gallery"]} to="/about" >About Us</TopNavBarElement>
-                    <TopNavBarElement items={["club workshops", "hackathons", "projects", "upcoming events", "career days"]}
+                    <TopNavBarElement items={["Officers", "Members", "Gallery"]} to="/about" >About Us</TopNavBarElement>
+                    <TopNavBarElement items={["Workshops", "Hackathons", "Projects", "Upcoming Events", "Career Days"]}
                         to="/activities" idItems={["clubWorkshops", "hackathons", "projects", "upcomingEvents", "careerDays"]}>
                         Activities</TopNavBarElement>
-                    <TopNavBarElement items={["airtable form", "socials"]} idItems={["airtableForm", "socials"]} to="/contact">
+                    <TopNavBarElement items={["Form", "Socials"]} idItems={["airtableForm", "socials"]} to="/contact">
                         Contact Us</TopNavBarElement>
                 </div>
                 <p id="firstItem"></p>
