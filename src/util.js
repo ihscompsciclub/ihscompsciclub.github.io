@@ -12,7 +12,8 @@ export class TopNavBar extends React.Component {
                     <p>IHS Comp Sci Club</p>
                     <Link to="/" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Home</Link>
                     <Link to="/faqs" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>FAQs</Link>
-                    <TopNavBarElement items={["Officers", "Members", "Gallery"]} to="/about" >About Us</TopNavBarElement>
+                    <TopNavBarElement items={["Officers", "Members", "Gallery"]} idItems={["officers", "members", "gallery"]}
+                        to="/about" >About Us</TopNavBarElement>
                     <TopNavBarElement items={["Workshops", "Hackathons", "Projects", "Upcoming Events", "Career Days"]}
                         to="/activities" idItems={["clubWorkshops", "hackathons", "projects", "upcomingEvents", "careerDays"]}>
                         Activities</TopNavBarElement>
