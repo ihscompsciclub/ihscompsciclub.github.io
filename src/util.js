@@ -4,6 +4,8 @@ import { HashLink } from 'react-router-hash-link'
 import Dropdown from 'react-bootstrap/Dropdown'
 
 export class TopNavBar extends React.Component {
+    // needs a property curPage
+
     render() {
         return (
             <div>
@@ -13,11 +15,13 @@ export class TopNavBar extends React.Component {
                     <Link to="/" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>Home</Link>
                     <Link to="/faqs" onClick={() => { window.scroll({ 'top': 0, 'left': 0 }) }}>FAQs</Link>
                     <TopNavBarElement items={["Officers", "Members", "Gallery"]} idItems={["officers", "members", "gallery"]}
-                        to="/about" >About Us</TopNavBarElement>
+                        to="/about" curPage={this.props.curPage}>About Us</TopNavBarElement>
                     <TopNavBarElement items={["Workshops", "Hackathons", "Projects", "Upcoming Events", "Career Days"]}
-                        to="/activities" idItems={["clubWorkshops", "hackathons", "projects", "upcomingEvents", "careerDays"]}>
+                        to="/activities" idItems={["clubWorkshops", "hackathons", "projects", "upcomingEvents", "careerDays"]}
+                        curPage={this.props.curPage}>
                         Activities</TopNavBarElement>
-                    <TopNavBarElement items={["Form", "Socials"]} idItems={["airtableForm", "socials"]} to="/contact">
+                    <TopNavBarElement items={["Form", "Socials"]} idItems={["airtableForm", "socials"]} to="/contact"
+                        curPage={this.props.curPage}>
                         Contact Us</TopNavBarElement>
                 </div>
                 <p id="firstItem"></p>
@@ -45,9 +49,7 @@ class TopNavBarElement extends React.Component {
         // setup the renderItems (the items to be in the list)
         this.renderItems = []
         for (var i = 0; i < this.props.items.length; i++) {
-            this.renderItems.push(<HashLink className="dropdown-item" to={this.props.to + "#" + this.idItems[i]}>
-                {this.props.items[i]}
-            </HashLink>)
+            this.renderItems.push(this.createHashLinks(i))
         }
 
         // shortcut reference for the title
@@ -56,6 +58,14 @@ class TopNavBarElement extends React.Component {
         this.state = { show_items: false }
 
         this.color = "white"
+
+        this.timeout = (typeof this.props.timeout == 'undefined') ? 1000 : this.props.timeout
+    }
+
+    createHashLinks(number) {
+        return <HashLink className="dropdown-item" to={this.props.to + "#" + this.idItems[number]} key={this.idItems[number]}>
+            {this.props.items[number]}
+        </HashLink>
     }
 
 
@@ -64,10 +74,11 @@ class TopNavBarElement extends React.Component {
             <Dropdown as="span" align="start" className="topnavdd"
                 onMouseOver={() => { this.color = "black"; this.setState({ show_items: true }); console.log('entered'); }}
                 onMouseLeave={() => { this.color = "white"; this.setState({ show_items: false }); console.log('left'); }}
-                onClick={() => { window.scroll({ 'top': 0, 'left': 0 }); this.setState({ show_items: false }); }}
+                onClick={() => { this.setState({ show_items: false }); }}
                 show={this.state.show_items}>
 
-                <Link to={this.props.to} style={{ textAlign: "center", width: "max-content", float: "center", color: this.color }}>
+                <Link onClick={() => { window.scroll({ 'top': 0, 'left': 0 }); console.log("top") }} to={this.props.to}
+                    style={{ textAlign: "center", width: "max-content", float: "center", color: this.color }}>
                     {this.props.children}
                 </Link>
                 <Dropdown.Menu show={this.state.show_items} style={{

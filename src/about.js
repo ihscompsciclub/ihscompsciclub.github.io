@@ -5,7 +5,7 @@ export class About extends React.Component {
   render() {
     return (
       <div className="Content">
-        <TopNavBar />
+        <TopNavBar curPage="about" />
         <div className="centeredContent paddedContent">
           <h1 id="officers">Our Officers</h1>
           <div className="personBlock">

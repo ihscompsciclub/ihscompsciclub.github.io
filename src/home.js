@@ -7,7 +7,7 @@ export class Home extends React.Component {
     render() {
         return (
             <div className="Home Content">
-                <TopNavBar />
+                <TopNavBar curPage="home" />
 
                 <CoolScrollEffect>
                     <h1 id="hp_header" className="centeredContent paddedContent">Welcome to IHS Computer Science Club</h1>

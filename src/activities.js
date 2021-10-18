@@ -5,7 +5,7 @@ export class Activities extends React.Component {
     render() {
         return (
             <div className="Content">
-                <TopNavBar />
+                <TopNavBar curPage="activities" />
                 <h1 className="centeredContent paddedContent">TODO</h1>
 
                 <h1 id="clubWorkshops">CLUB WORKSHOPS TODO</h1>

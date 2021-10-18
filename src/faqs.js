@@ -5,7 +5,7 @@ export class Faqs extends React.Component {
     render() {
         return (
             <div className="Content">
-                <TopNavBar />
+                <TopNavBar curPage="faqs" />
                 <h1 className="centeredContent">FAQs</h1>
                 <div className="paddedContent larger">
                     <li className="numberedList">
