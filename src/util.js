@@ -83,7 +83,7 @@ class TopNavBarElement extends React.Component {
                 </Link>
                 <Dropdown.Menu show={this.state.show_items} style={{
                     backgroundColor: "#26428b", color: "white",
-                    width: "unset", transform: ("translateY(" + 1 / this.renderItems.length * 100 + "%) translateX(-10%)")
+                    width: "unset", transform: ("translateY(" + 1 / this.renderItems.length * 100 + "%) translateX(-11.65%)")
                 }}>
                     {this.renderItems}
                 </Dropdown.Menu>
