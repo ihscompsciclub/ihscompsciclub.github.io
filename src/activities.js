@@ -7,27 +7,42 @@ export class Activities extends React.Component {
         return (
             <div className="paddedContent Content">
                 <TopNavBar curPage="activities" />
+
+                {/**Club Workshops content */}
                 <h1 id="clubWorkshops" className="centeredContent">CLUB WORKSHOPS</h1>
-                <h2>We have workshops on multiple programming languages,
+                <h3>We have workshops on multiple programming languages,
                     including workshops on web development,
                     game development as well as cybersecurity.
                     We also have guest speakers and career fairs.
-                </h2>
+                </h3>
+                <h3>Links to our workshops:</h3>
+                <li>September 15th - Intro to JS - <a href="https://docs.google.com/presentation/d/1X25EUVfhqo5IY37lySNBjxJYqObj5BOuPjR5zV7fLeE/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>September 22nd - JavaScript, Week 2 - <a href="https://docs.google.com/presentation/d/1otMvo6YIxJAhTd5OLH9v5R3QNlP_MREu2V1sIpGe8cc/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>October 6th - JavaScript, Week 3 - <a href="https://docs.google.com/presentation/d/1WzOG8fZYrqFmi6ocixuBlB6NCMY930bxYYa_4EycpbE/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>October 13th - JavaScript, Week 4 (Intro to HTML) - <a href="https://docs.google.com/presentation/d/1a6lQlZHAcveHT4g8ZwVLM43E46n84V_mqfWvaLyP1AY/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>October 20th - JavaScript, Week 5 (HTML, CSS, JS)- <a href="https://docs.google.com/presentation/d/13xbqdkeIoxD_CtR3cd2svG9oZrhhYJaTPpSRSISRdfU/edit?usp=sharing" target="blank">Slides</a></li>
 
-                <h1 id="hackathons" className="centeredContent">HACKATHONS TODO</h1>
-                <Filler />
+                {/** Club Hackathons content */}
+                <h1 id="hackathons" className="centeredContent">HACKATHONS</h1>
+                <h3>We host hackathons, which are themed competitions where our
+                    members try to code the best solution to a problem</h3>
+                <p>October Hackathon link: <a href="https://cs-club-2021-october.devpost.com/" target="blank">Here</a></p>
+
+                {/**Club Projects content */}
                 <h1 id="projects" className="centeredContent">PROJECTS</h1>
-                <h2>As a club, we’re currently working on: this website!
+                <h3>As a club, we’re currently working on: this website!
                     We encourage our members to try developing their own projects.
                     heck out these magnificent projects made by our outstanding people in our club.
-                </h2>
+                </h3>
+                <ProjectDisplayer linkArray={["https://replit.com/@ritza/demo-embed?embed=true", "https://replit.com/@Chreliot/CardGames?embed=true"]}
+                    projectNames={['Python Demo', 'Black Jack']} />
 
-                {/*TODO have real projects here*/}
-                <ProjectDisplayer linkArray={["https://replit.com/@ritza/demo-embed?embed=true", "https://replit.com/@Chreliot/CardGames?embed=true"]} />
-                {/*<iframe title="project1" frameborder="0" width="100%" height="500px" src="https://replit.com/@ritza/demo-embed?embed=true"></iframe>*/}
+                {/** Club events content */}
                 <h1 id="upcomingEvents" className="centeredContent">UPCOMING EVENTS TODO</h1>
-                <h2>Cool Calendar HERE</h2>
+                <h3>Cool Calendar HERE</h3>
                 <Filler />
+
+                {/** Club career days content */}
                 <h1 id="careerDays">CAREER DAYS TODO</h1>
                 <Filler />
             </div >
@@ -36,7 +51,8 @@ export class Activities extends React.Component {
 }
 
 class ProjectDisplayer extends React.Component {
-    // provide a property 'linkArray'
+    // provide a property 'linkArray' : arr[String]
+    // optionally, provide a property 'projectNames' : arr[String]
     constructor(props) {
         super(props)
         this.items = this.props.linkArray
