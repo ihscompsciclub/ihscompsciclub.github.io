@@ -1,3 +1,8 @@
+# About
+This is the repository for Independence High School Computer Science Club's club website.
+
+The club website is hosted [here](https://ihscompsciclub.github.io)
+
 # IMPORTANT
 
 Run `npm create-react-app` in the folder before transfering github files to it.
