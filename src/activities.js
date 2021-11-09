@@ -1,5 +1,5 @@
 import React from 'react'
-import { TopNavBar, Filler } from './util'
+import { TopNavBar, Filler, PersonCard } from './util'
 import Dropdown from 'react-bootstrap/Dropdown'
 
 export class Activities extends React.Component {
@@ -44,7 +44,11 @@ export class Activities extends React.Component {
 
                 {/** Club career days content */}
                 <h1 id="careerDays">CAREER DAYS TODO</h1>
-                <Filler />
+                <p>In CS Club, we host career days where guest
+                    speakers come to our meetings and give presentations about
+                    how their experience the CS field has been! Our past guest
+                    speakers:</p>
+                <PersonCard imgSrc="./memberImgs/Philip Reasa.png" name="Philip Reasa" shortDesc="Former Google Software Engineer" />
             </div >
         )
     }
