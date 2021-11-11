@@ -21,6 +21,9 @@ export class Activities extends React.Component {
                 <li>October 6th - JavaScript, Week 3 - <a href="https://docs.google.com/presentation/d/1WzOG8fZYrqFmi6ocixuBlB6NCMY930bxYYa_4EycpbE/edit?usp=sharing" target="blank">Slides</a></li>
                 <li>October 13th - JavaScript, Week 4 (Intro to HTML) - <a href="https://docs.google.com/presentation/d/1a6lQlZHAcveHT4g8ZwVLM43E46n84V_mqfWvaLyP1AY/edit?usp=sharing" target="blank">Slides</a></li>
                 <li>October 20th - JavaScript, Week 5 (HTML, CSS, JS)- <a href="https://docs.google.com/presentation/d/13xbqdkeIoxD_CtR3cd2svG9oZrhhYJaTPpSRSISRdfU/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>October 27th - No Slides (had a guest speaker instead)</li>
+                <li>November 3th - Version Control Week 1- <a href="https://docs.google.com/presentation/d/1GDZHlU9hCABsqSTGaLThmWfdxpPhizL-KcM12cVQnts/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>November 10th - Version Control Week 2- <a href="https://docs.google.com/presentation/d/1SIDPjSei_lMAtBdv6JW0HKDHN7bPe_4ZiBKx7hjGFWY/edit?usp=sharing" target="blank">Slides</a></li>
 
                 {/** Club Hackathons content */}
                 <h1 id="hackathons" className="centeredContent">HACKATHONS</h1>
