@@ -1,0 +1,57 @@
+/* Styles used for TopNavBar*/
+.topnav {
+    background-color: #26428b;
+    display:inline;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left:0px;
+    font-weight: bold;
+    font-size: x-large;
+    z-index: 100;
+}
+.topnav p{
+    margin:0%;
+    padding:1%;
+    float:left;
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+}
+.topnav a{
+    vertical-align: middle;
+    float:left;
+    color:white;
+    text-align: center;
+    text-decoration:none;
+    padding:1%;
+}
+.topnav a:hover{
+    background-color: white;
+    color:black;
+}
+.topnav img{
+    float:left;
+    padding: 1%;
+    display:block;
+    width: 64px;
+    height: auto;
+    max-width: 100%;
+}
+
+.topnavdd{
+    margin:0%;
+    position: relative;
+    display:block;
+    float:left;
+    text-align: center;
+    padding:1%;
+    height:min-content;
+}
+.topnavdd:hover{
+    background-color: white;
+    color:#000;
+}
+#firstItem{
+    padding-top:4%;
+}

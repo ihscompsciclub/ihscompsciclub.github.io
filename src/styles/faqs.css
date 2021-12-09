@@ -1,0 +1,14 @@
+/* Styles used for Faqs page */
+.letteredList{
+    list-style: lower-alpha;
+    text-indent: 0.5in;
+}
+.numberedList{
+    list-style:decimal;
+}
+.larger {
+    font-size: larger;
+}
+.xlarge {
+    font-size:x-large;
+}

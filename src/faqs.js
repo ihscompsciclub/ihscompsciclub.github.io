@@ -1,5 +1,6 @@
 import React from 'react'
 import { TopNavBar } from './util'
+import "./styles/faqs.css"
 
 export class Faqs extends React.Component {
     render() {

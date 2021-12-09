@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import Dropdown from 'react-bootstrap/Dropdown'
+import "./styles/personCard.css"
+import "./styles/topNavBar.css"
 
 export class TopNavBar extends React.Component {
     // needs a property curPage

@@ -22,8 +22,12 @@ export class Activities extends React.Component {
                 <li>October 13th - JavaScript, Week 4 (Intro to HTML) - <a href="https://docs.google.com/presentation/d/1a6lQlZHAcveHT4g8ZwVLM43E46n84V_mqfWvaLyP1AY/edit?usp=sharing" target="blank">Slides</a></li>
                 <li>October 20th - JavaScript, Week 5 (HTML, CSS, JS)- <a href="https://docs.google.com/presentation/d/13xbqdkeIoxD_CtR3cd2svG9oZrhhYJaTPpSRSISRdfU/edit?usp=sharing" target="blank">Slides</a></li>
                 <li>October 27th - No Slides (had a guest speaker instead)</li>
-                <li>November 3th - Version Control Week 1- <a href="https://docs.google.com/presentation/d/1GDZHlU9hCABsqSTGaLThmWfdxpPhizL-KcM12cVQnts/edit?usp=sharing" target="blank">Slides</a></li>
-                <li>November 10th - Version Control Week 2- <a href="https://docs.google.com/presentation/d/1SIDPjSei_lMAtBdv6JW0HKDHN7bPe_4ZiBKx7hjGFWY/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>November 3th - Version Control Week 1 - <a href="https://docs.google.com/presentation/d/1GDZHlU9hCABsqSTGaLThmWfdxpPhizL-KcM12cVQnts/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>November 10th - Version Control Week 2 - <a href="https://docs.google.com/presentation/d/1SIDPjSei_lMAtBdv6JW0HKDHN7bPe_4ZiBKx7hjGFWY/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>November 17th - Discord Bot Development Week 1 - <a href="https://docs.google.com/presentation/d/19fkM1rKOrKBa1110PCBYVf_G82WUw37aOrAB4vaEJfA/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>November 24th - Thanksgiving Break (No Slides)</li>
+                <li>December 1st - Discord Bot Development Week 2 - <a href="https://docs.google.com/presentation/d/1XjNqEvlBUkYQdOOi4c8YEJjoXgSCF8TDQZOa9PX2OqM/edit?usp=sharing" target="blank">Slides</a></li>
+                <li>December 8th - Discord Bot Development Week 3 - <a href="https://docs.google.com/presentation/d/1nmgzrrSf5BYfkwOotVNSGiCRUKZ-bEtjUA2uyLJCSEg/edit?usp=sharing" target="blank">Slides</a></li>
 
                 {/** Club Hackathons content */}
                 <h1 id="hackathons" className="centeredContent">HACKATHONS</h1>
@@ -37,8 +41,8 @@ export class Activities extends React.Component {
                     We encourage our members to try developing their own projects.
                     heck out these magnificent projects made by our outstanding people in our club.
                 </h3>
-                <ProjectDisplayer linkArray={["https://replit.com/@ritza/demo-embed?embed=true", "https://replit.com/@Chreliot/CardGames?embed=true"]}
-                    projectNames={['Python Demo', 'Black Jack']} />
+                <ProjectDisplayer linkArray={["https://replit.com/@ritza/demo-embed?embed=true", "https://replit.com/@Chreliot/CardGames?embed=true", "https://replit.com/@Chreliot/Poker?embed=true"]}
+                    projectNames={['Python Demo', 'Black Jack', "Poker"]} />
 
                 {/** Club events content */}
                 <h1 id="upcomingEvents" className="centeredContent">UPCOMING EVENTS TODO</h1>

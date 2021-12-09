@@ -1,0 +1,32 @@
+/* style used for (member) cards */
+.card{
+    float:left;
+    background-color: white;
+    min-height:35vh;    
+    text-align: center;
+    min-width:15vh;
+    width:30vh;
+    margin: 1vh;
+    color:black;
+}
+.card img{
+    width:inherit;
+    height:20vh;
+    object-fit: cover;
+}
+
+.personBlock{
+    max-height: 50vh;
+    overflow:auto;
+    background: rgb(132, 230, 187);
+    margin-bottom: 20vh;
+}
+.personBlock::-webkit-scrollbar{
+    background-color:inherit;
+    display:block;
+    width:5px;
+}
+.personBlock::-webkit-scrollbar-thumb{
+    background:#000;
+}
+
