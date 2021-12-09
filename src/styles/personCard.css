@@ -8,11 +8,16 @@
     width:30vh;
     margin: 1vh;
     color:black;
+    transform: ease 1s;
+    border-radius: 5%;
 }
 .card img{
     width:inherit;
     height:20vh;
     object-fit: cover;
+}
+.card:hover{
+    transform: scale(110%);
 }
 
 .personBlock{
