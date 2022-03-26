@@ -37,7 +37,9 @@ export class Home extends React.Component {
                     </table>
                 </CoolScrollEffect>
                 <Filler />
-              <img src={stickermule_logo} alt = "stickermule logo" width="600" height="200"/>
+              <a href="https://www.stickermule.com/">
+                <img src={stickermule_logo} alt = "stickermule logo" width="600" height="200"/>
+              </a>
             </div >
         )
     } // ^will shove that logo in a footer eventually
