@@ -1,6 +1,6 @@
 import React from 'react'
 import { TopNavBar, CoolScrollEffect, Filler } from './util'
-
+import stickermule_logo from './bgImgs/stickermule_logo.png'
 
 export class Home extends React.Component {
 
@@ -37,7 +37,8 @@ export class Home extends React.Component {
                     </table>
                 </CoolScrollEffect>
                 <Filler />
+              <img src={stickermule_logo} alt = "stickermule logo" width="600" height="200"/>
             </div >
         )
-    }
+    } // ^will shove that logo in a footer eventually
 }

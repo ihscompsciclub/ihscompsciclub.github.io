@@ -135,6 +135,6 @@ export class Filler extends React.Component {
     }
 
     render() {
-        return <h2>{this.fill(300)}</h2>
+        return <h2>{this.fill(25)}</h2> // reduced so the stickermule logo is actually visible
     }
 }
